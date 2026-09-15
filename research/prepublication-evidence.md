@@ -23,7 +23,8 @@ Regenerate after an intentional input change by omitting `--check`. In the publi
 where implementation sources are not required:
 
 ```sh
-uv run --script evidence/reproduce.py --check
+uv run --script evidence/reproduce-sampler.py --check evidence/yellowpaper-sampler-evidence.json
+uv run --script evidence/reproduce-audit.py --check
 ```
 
 The script uses only the Python standard library. Its ledger fingerprint covers the expected declarations,
