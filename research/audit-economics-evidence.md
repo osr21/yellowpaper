@@ -14,7 +14,7 @@ UV_CACHE_DIR=/tmp/flop-yellowpaper-uv UV_NO_PROJECT=1 uv run pytest -q scripts/p
 The generated [JSON](../evidence/yellowpaper-audit-evidence.json) contains exact rational results,
 scoped source-span hashes, and line references. The [CSV](../evidence/yellowpaper-audit-evidence.csv) is the
 concurrent-exposure sweep. `--verify-sources` verifies named source fragments and scoped hashes. An
-exported copy beside the JSON/CSV reproduces arithmetic with `--check` without private sources.
+exported copy beside the JSON/CSV reproduces arithmetic with `--check` without private sources: `uv run --script evidence/reproduce-audit.py --check`.
 
 ## Claim supported by this evidence
 
